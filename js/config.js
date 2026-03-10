@@ -1,8 +1,7 @@
 
 // --- EcoClean CONFIGURATION ---
 
-// const API_URL = 'https://your-backend.vercel.app'; // Production URL
-const API_URL = 'https://eco-clean-final-project-1arl.vercel.app/api'; // Development URL
+const API_URL = 'https://eco-clean-final-project-1arl.vercel.app'; // Production URL
 // Cloudinary Settings (Keep these matching your .env)
 const CLOUDINARY_CLOUD_NAME = "def2x8hlo";
 const CLOUDINARY_UPLOAD_PRESET = "eco_clean";

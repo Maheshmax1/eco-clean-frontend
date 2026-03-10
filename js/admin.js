@@ -72,14 +72,12 @@ async function fetchAdminEvents() {
   });
 }
 
-
-  // m Updates event status to 'completed'.
  
 async function markCompleted(id) {
   if (!confirm("Mark this event as completed?")) return;
   const res = await apiRequest(`/events/${id}`, "PUT", { status: "completed" });
   if (res && res.ok) {
-    alert("✅ Event moved to History.");
+    alert(" Event moved to History.");
     fetchAdminEvents();
     fetchStats();
   }
@@ -88,10 +86,10 @@ async function markCompleted(id) {
 //   Deletes an event from the database.
 
 async function deleteEvent(id) {
-  if (!confirm("🛑 Are you sure? This cannot be undone.")) return;
+  if (!confirm(" Are you sure? This cannot be undone.")) return;
   const res = await apiRequest(`/events/${id}`, "DELETE");
   if (res && res.ok) {
-    alert("✅ Event deleted.");
+    alert("Event deleted.");
     fetchAdminEvents();
     fetchStats();
   }

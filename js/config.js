@@ -27,7 +27,10 @@ function handleAuthError() {
     window.location.href = insidePages ? "../index.html" : "index.html";
 }
 
-
+/**
+ * apiRequest: A simple helper for all database calls.
+ * It automatically adds the 'Bearer' token for you.
+ */
 async function apiRequest(endpoint, method = "GET", body = null, requireAuth = true) {
     const token = getToken();
     const headers = { "Accept": "application/json" };

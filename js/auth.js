@@ -1,12 +1,5 @@
 
-/**
- * EcoClean – auth.js
- * Handles User Signup and Login.
- */
 
-/**
- * handleSignup: Creates a new user account.
- */
 async function handleSignup(event) {
     event.preventDefault();
 
